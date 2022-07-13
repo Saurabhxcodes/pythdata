@@ -1,0 +1,2 @@
+# pythdata
+ python basics
