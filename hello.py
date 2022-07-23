@@ -10,14 +10,5 @@ print(s)'''
 n=list(map(int, input("elements of array:-").strip().split()))
 print(n[: : -1])'''
 
-n=int(input("Number of elements in the array:-"))
-arr=list(map(int, input("elements of array:-").strip().split()))
-print(arr)
-for(int i=0; i<n; i++){
-    if arr[i]=arr[n-1]{
-        print("duplicate is present")
-    else:
-        print("no duplicate")
-    }
 
-}
+
