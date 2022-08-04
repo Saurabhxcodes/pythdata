@@ -59,7 +59,7 @@ for i in range(0,size):
     print(" ")
 '''
 #FIRST NON REPEAING ELEMENT
-def first_non(arr, n):
+'''def first_non(arr, n):
     for i in range(n):
         j=0
         while(j<n):
@@ -70,8 +70,22 @@ def first_non(arr, n):
             return[i]
     return -1
 
-arr = [9,3,4,53,5,4]
+arr = [9,9,4,53,5,4]
 n=len(arr)
-print(first_non(arr,n))
+print(first_non(arr,n))'''
 
-    
+
+'''arr = list(map(int,input("enter the elements").split()))
+print("you have entered these elements",arr)
+print("the maximum number in the array is",max(arr))
+print("the minimum number in the array is",min(arr))'''
+
+class cars:
+    def __init__(self,color,modal,year,speed):
+        self.color=color
+        self.modal=modal
+        self.year=year
+        self.speed=speed
+tata  = cars('black','harrier',2000,140)
+print (tata.__dict__)
+
