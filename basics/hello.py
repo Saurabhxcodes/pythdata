@@ -80,12 +80,21 @@ print("you have entered these elements",arr)
 print("the maximum number in the array is",max(arr))
 print("the minimum number in the array is",min(arr))'''
 
-class cars:
+'''class cars:
     def __init__(self,color,modal,year,speed):
         self.color=color
         self.modal=modal
         self.year=year
         self.speed=speed
 tata  = cars('black','harrier',2000,140)
-print (tata.__dict__)
+print(tata.modal)
+print (tata.__dict__)'''
 
+
+
+
+
+
+
+
+                     
