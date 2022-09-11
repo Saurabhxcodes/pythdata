@@ -1,2 +1,0 @@
-# pythdata
- python basics
