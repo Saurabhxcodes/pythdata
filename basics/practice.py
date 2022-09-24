@@ -61,6 +61,9 @@ for i in str:
 
     if count==1:
         print(i,end =" ")'''
+
+n = [-7,-5,-2,0,1]
+
         
 
         
