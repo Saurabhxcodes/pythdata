@@ -49,8 +49,8 @@ for i in range(2,n):
     print(n3, end = " ")
 print()
 '''
-# Find Repeated character in String
-'''str = 'barabanki'
+# Find unRepeated character in String
+str = 'barabanki'
 for i in str:
     count = 0
     for j in str:
@@ -60,9 +60,9 @@ for i in str:
             break
 
     if count==1:
-        print(i,end =" ")'''
+        print(i,end =" ")
 
-n = [-7,-5,-2,0,1]
+
 
         
 

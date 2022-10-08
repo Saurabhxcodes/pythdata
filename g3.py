@@ -9,6 +9,7 @@ c.x = randint(64,WIDTH-64)
 c.y = randint(64,HEIGHT-64)
 score =0
 speed = 3
+
 def draw():
     screen.clear()
     p.draw()
@@ -24,6 +25,8 @@ def update_score():
         score+=1
         c.pos = (randint(64,WIDTH-64),randint(64,HEIGHT-64))
         sounds.eating2.play()
+   
+
     
 
 def player_control():
@@ -39,6 +42,7 @@ def player_control():
         p.y += -speed
     else:
         p.angle = 0
+    
 
 
 pgzrun.go()

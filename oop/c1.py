@@ -1,9 +1,3 @@
-
-
-
-from gzip import BadGzipFile
-
-
 class cat:
     breed = None
     gender = None

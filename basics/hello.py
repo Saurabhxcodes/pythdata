@@ -70,7 +70,7 @@ for i in range(0,size):
             return[i]
     return -1
 
-arr = [9,9,4,53,5,4]
+arr = [9,9,4,53,5,4,53]
 n=len(arr)
 print(first_non(arr,n))'''
 
@@ -223,6 +223,8 @@ for i in range(n-1):
 n = int(input("enter the no of arrays"))
 arr =list(map(int,input().split()))
 print(solution(n,arr))'''
+
+'''
 list1 = list(map(int,input("\nEnter the numbers : ").split()))
 list2 = list(map(int,input("\nEnter the numbers : ").split()))
 list3 = []
@@ -237,7 +239,7 @@ for j in range(len(list2)):
 print(list3)
 list3 = sorted(list3)
 print(list3)
-
+'''
 
 
 
