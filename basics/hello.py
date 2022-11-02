@@ -240,8 +240,130 @@ print(list3)
 list3 = sorted(list3)
 print(list3)
 '''
+'''def increments(text,s):
+    result = ""
+    for i in range(len(text)):
+        char = text[i]
+        if(char.isupper()):
+            result+=chr((ord(char)+s-65) % 26 + 65)
+        else:
+            result +=chr((ord(char)+s-97) % 26 + 97)
+    return result
+text = "Hello"
+s = 4
+print("text:",text)
+print("shift:" +str(s))
+print("cipher" + increments(text,s))'''
+
+#sum of array
+
+'''def sum(arr):
+    sum =0
+    for i in arr:
+        sum = sum +i
+    return sum 
+arr = list(map(int,input("enter the array").split()))
+print(sum(arr))'''
+        
+
+#largest element of array
+
+'''def larArr(arr):
+    t = sorted(arr)
+    return t[-1]
+arr = list(map(int,input("enter the array==").split()))
+print(larArr(arr))'''
+
+#swap first and last element of the list
+'''def swap(arr):
+    t= arr[0]
+    arr[0]=arr[-1]
+    arr[-1]=t
+    return arr
+arr = list(map(int,input("enter the elements of list").split()))
+print(swap(arr))'''
+
+#find length and element presence in the list
+
+'''def findL(arr,d):
+    for i in range(len(arr)):
+        if arr[i]==d:
+            return True
+        else:
+            s="element not present"
+            return s
+            
+arr = list(map(int,input("enter the elements of list==>").split()))
+d = int(input("enter the ele to search=="))
+print(findL(arr,d))'''
 
 
+class Sports_veh:
+    def __init__(self):
+        self.name = ""
+        self.noOfVehicle = ""
+        self.vehicle1 = ""
+        self.vehicle2 = ""
+
+    def setPersonDetails(self, newName, noOfVehicle, vehicle1, vehicle2):
+        self.name = newName
+        self.noOfVehicle = noOfVehicle
+        self.vehicle1 = vehicle1
+        self.vehicle2 = vehicle2
+
+    def getPersonDetails(self):
+        print(self.name, "has", self.noOfVehicle, "vehicle one is",
+              self.vehicle1, "and another is", self.vehicle2)
+
+
+class vehicle:
+    def __init__(self):
+        self.fuel = ""
+        self.uses = ""
+        self.operation = ""
+
+
+class hondaAccordCar(vehicle):
+    def sethondaAccordCar(self, newfuel, uses, madein):
+        self.fuel = newfuel
+        self.uses = uses
+        self.operation = madein
+
+    def getHondaAccordCar(self):
+        print("Honda accord car runs on fuel called", self.fuel)
+        print("Honda accord is", self.uses, "and", self.operation)
+
+
+class DucatiBike(vehicle):
+    def setDucatiBike(self, newFuel, uses, imported):
+        self.fuel = newFuel
+        self.uses = uses
+        self.operation = imported
+
+    def getDucatiBike(self):
+        print("Ducati runs on fuel called", self.fuel)
+        print("Ducati is", self.uses, "and", self.operation, "vehicle")
+
+
+if __name__ == "__main__":
+    p = Sports_veh()
+    p.setPersonDetails("Sourabh", "two", "honda accord car", "Ducati Bike")
+    p.getPersonDetails()
+    
+
+
+   
+    d = DucatiBike()
+    d.setDucatiBike("petrol", "used", "imported")
+    d.getDucatiBike()
+
+    h = hondaAccordCar()
+    h.sethondaAccordCar("diesel", "new", "made in india")
+    h.getHondaAccordCar()
+   
+
+   
+        
 
 
 
