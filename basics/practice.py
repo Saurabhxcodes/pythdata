@@ -46,21 +46,87 @@ for i in range(2,n):
     n3=n1+n2
     n1=n2
     n2=n3
-    print(n3, end = " ")
+    print(n1,n2,n3, end = " ")
 print()
 '''
-# Find unRepeated character in String
-str = 'barabanki'
-for i in str:
-    count = 0
-    for j in str:
-        if i==j:
-            count+=1
-        if count>1:
-            break
+#ADD THE 2ND LARGEST AMONG EVEN POSITIONED AND SECOND LARGEST AMONG ODD POSITIOND (SUM)
+# 
+'''def LargeSmallSum(arr, N):
+    even_arr = []
+    odd_arr = []
+    for i in range(N):
+        if i%2 ==0:
+            even_arr.append(arr[i])
+        else:
+            odd_arr.append(arr[i])
+    even_arr = sorted(even_arr)
+    odd_arr = sorted(odd_arr)
+    s= even_arr[-2] + odd_arr[-2]
+    return s
+arr = [3,2,1,7,5,4]
+N = len(arr)
+print(LargeSmallSum(arr,N)) '''
 
-    if count==1:
-        print(i,end =" ")
+'''def fiboSum(n):
+    if n<=1:
+        return n 
+    else:
+        return(fiboSum(n-1) + fiboSum(n-2))
+nterms = 12
+m =2
+div_sum =[]
+t = []
+sum = 0
+
+if nterms <=0:
+        print("please enter valid no.")
+else:
+    print("fibo series is")
+    for i in range(nterms):
+        print(fiboSum(i))
+        
+        div_sum.append(fiboSum(i))
+    print(div_sum)
+    for i in range(len(div_sum)):
+        if div_sum[i]%m==0:
+            t.append(div_sum[i])
+    print(t)
+    for i in t:
+        sum = sum+i
+    print(sum)'''
+
+'''def discriminant(a,b,c):
+    s=b*b
+    t=4*a*c
+    results = s-t
+    return results
+a=3
+b=6
+c=4
+print(discriminant(a,b,c))'''
+
+
+
+
+
+
+        
+        
+
+    
+
+ 
+
+      
+
+
+
+
+
+
+
+
+
 
 
 

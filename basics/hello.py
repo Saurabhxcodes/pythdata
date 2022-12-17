@@ -19,11 +19,16 @@ for i in range (1,n+1):
         number=number+1
     print()'''
 #PATTERN
-'''n1= int(input("enter the number of line for pattern"))
-for i in range(1,n1+1):
-    for j in range(1,i+1):
-        print('*',end ='')
-    print()'''
+'''
+def pypart(n):
+    for i in range(0,n):
+        for j in range(0,i+1):
+            print("*",end=" ")
+        print("\r")
+n =5
+print(pypart(n))'''
+
+
  #DIVISIBILITY OF 7 AND 5 
 '''n3= 100
 
@@ -297,7 +302,7 @@ arr = list(map(int,input("enter the elements of list==>").split()))
 d = int(input("enter the ele to search=="))
 print(findL(arr,d))'''
 
-
+'''
 class Sports_veh:
     def __init__(self):
         self.name = ""
@@ -360,11 +365,23 @@ if __name__ == "__main__":
     h = hondaAccordCar()
     h.sethondaAccordCar("diesel", "new", "made in india")
     h.getHondaAccordCar()
-   
+   '''
 
-   
-        
+def palindSum(n) :
+    rev=0
+    i=n
+    while i>0:
+        rev = rev*10+i%10
+        i//=10
+        return (n==rev)
+def checke(end,beg) :       
+    emt_lis=[]
+    sum = 0
+    for i in range(beg,end+1):
+        if palindSum(i):
+            emt_lis.append(i)
 
+    return(sum(emt_lis))
 
 
 
